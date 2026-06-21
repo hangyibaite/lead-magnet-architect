@@ -31,7 +31,7 @@ Propose a direction that passes both filters, specific to their offer's actual p
 
 **Generate genuinely distinct options — never pad to hit a number.** If fewer than 3 strong ideas exist, say so honestly, ask a clarifying question that would unlock more, or present fewer ideas with the reasoning gap named. Do not force a 5th idea that isn't defensible — a weak idea offered with false confidence is worse than an honest gap.
 
-Each idea should briefly state: what type it is (quiz/audit, swipe file, calculator, template pack), and why it fits this specific paid mechanism — not just the general topic.
+Each idea should briefly state: what type it is (diagnostic quiz, swipe file, text-based, video sequence), and why it fits this specific paid mechanism — not just the general topic.
 
 Let the user select one before proceeding.
 
@@ -46,12 +46,14 @@ Once a type is selected, load the matching reference file. Do not give generic b
 If the type doesn't clearly match an existing reference file, say so rather than forcing a fit — flag it as a new type that needs its own reference built.
 
 ### Step 5 — Checklist generation
-Using the loaded type file, generate the specific checklist for their asset — populated with their actual inputs/categories/copy direction from Steps 1-3, not a generic template restated.
+Using the loaded type file, generate the specific checklist for their asset — populated with their actual inputs/categories/copy direction from Steps 1-3, not a generic template restated. Format the initial overview and each individual step exactly per `checklist.md`.
 
 ### Step 6 — Guided iteration
-**Reveal one step at a time.** Do not output the full checklist and disappear.
+**Reveal one step at a time. Do not output the full checklist and disappear.**
 
-After each step: wait for the user's input or completed work, check it against that step's pass bar (defined in the type file), correct if it doesn't meet the bar, and only then reveal the next step.
+Follow the exact mechanics in `iteration.md` — wait for the user's input or completed work, check it against that step's pass bar (defined in the type file), correct if it doesn't meet the bar, and only then reveal the next step.
+
+Once every step is confirmed, close using the format in `checklist.md` — this includes prompting the user to go build the real thing and return with evidence (screenshots, actual copy/logic as built) before treating anything as finished.
 
 ### Step 7 — QC
 Before calling the asset done, run the full pass in `references/qc.md` — both filters re-applied to the finished asset, plus copy/logic/technical/production checks. Nothing is done until this passes in full.
